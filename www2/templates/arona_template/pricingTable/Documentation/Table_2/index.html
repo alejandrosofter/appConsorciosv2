@@ -1,0 +1,214 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		
+		<head>
+			<title>CSS3 Web Pricing Tables Pack (Grids) - Table #2</title>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+			<link type="text/css" rel="stylesheet" href="style/style.css" />
+		</head> 
+		
+		<body>
+		
+			<div class="mainSection">
+			
+				<div class="header"></div>
+				
+				<div class="center floatContent">
+				
+					<div class="content">
+					
+						<div class="projectTitle">CSS3 Web Pricing Tables Pack (Grids) - Table #2</div>
+						
+						<div class="contentHeader"><a name="menu1"></a>CSS Styles</div>
+						
+						<p>The project uses the following cascade of style sheets:</p>
+						
+						<ul type="square">
+							<li><i>main.css</i> - base style sheet,</li>
+							<li><i>active.css</i> - style sheet for active (highlighted by default) columns,</li>
+							<li><i>style_1.css - style_8.css</i> - style sheets for 8 predefined color styles (skins).</li>
+						</ul>
+						
+						<p>
+							These style sheets are located in <i>styles</i> directory. To change the appearance of the template (to change the skin) you should add the appropriate style sheet to html file. 
+							For example: 
+						</p>
+		
+<pre class="code">
+&lt;link rel="stylesheet" type="text/css" href="styles/main.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/active.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/<b>style_2.css</b>" /&gt;
+</pre>
+						will result in a change in the appearance - style 02, or
+						
+<pre class="code">
+&lt;link rel="stylesheet" type="text/css" href="styles/main.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/active.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/<b>style_6.css</b>" /&gt;
+</pre>						
+
+						will result in a change in the appearance - style 06 etc.
+					
+						<div class="contentHeader"><a name="menu2"></a>HTML Structure</div>
+<pre class="code">
+&lt;!-- pricing table --&gt;	
+&lt;div class="p_table"&gt;
+	&lt;div class="frame_border"&gt;
+	
+		&lt;!-- caption column --&gt;
+		&lt;div class="caption_column"&gt;
+			&lt;ul&gt;
+				&lt;!-- column header --&gt;
+				&lt;li class="header_row_1"&gt;
+				&lt;li class="decor_line"&gt;
+				&lt;li class="header_row_2"&gt;
+		
+				&lt;!-- data rows --&gt;
+				&lt;li class="row_style_4"&gt;
+				&lt;li class="row_style_2"&gt;	
+				&lt;li class="row_style_4"&gt;
+				&lt;li class="row_style_2"&gt;	
+				&lt;li class="row_style_4"&gt;
+				&lt;li class="row_style_2"&gt;	
+
+				&lt;!-- column footer --&gt;
+				&lt;li class="footer_row"&gt;
+			&lt;/ul&gt;		
+		&lt;/div&gt;
+	
+		&lt;!-- column_1 --&gt;
+		&lt;div class="column_1"&gt;
+			&lt;ul&gt;
+				&lt;!-- column header --&gt;
+				&lt;li class="header_row_1"&gt;
+				&lt;li class="decor_line"&gt;
+				&lt;li class="header_row_2"&gt;
+		
+				&lt;!-- data rows --&gt;
+				&lt;li class="row_style_3"&gt;
+				&lt;li class="row_style_1"&gt;	
+				&lt;li class="row_style_3"&gt;
+				&lt;li class="row_style_1"&gt;	
+				&lt;li class="row_style_3"&gt;
+				&lt;li class="row_style_1"&gt;		
+
+				&lt;!-- column footer --&gt;
+				&lt;li class="footer_row"&gt;	
+			&lt;/ul&gt;	
+		&lt;/div&gt;
+	
+		[...]
+	
+	&lt;/div&gt;				
+&lt;/div&gt;
+</pre>	
+						<p>
+							The entire pricing table is contained within <i>p_table</i> class, then within <i>frame_border</i> class. Each single column is a separate class in order: <i>caption_column</i> - this is a column with a legend / captions, <i>column_1</i> - <i>column_4</i> - these are the other columns.
+						</p>
+						<p>
+							Each column header has three classes: <i>header_row_1</i> - this is the first header row with title, <i>decor_line</i> - this is 1px height horizontal line with glare light effect, <i>header_row_2</i> - the second header row with the given price etc.
+						</p>
+						<p>
+							Next there are data row classes: <i>row_style_1</i> - <i>row_style_3</i> - each of these classes has a different background color. TIP: <i>align_center</i> class added to any element will center its content inside.
+						</p>
+						<p>
+							The final element of a column is a footer - <i>footer_row</i> class.
+						</p>
+						
+						<div class="contentHeader"><a name="menu3"></a>How To...</div>
+						
+						<ul type="square">
+							<li><b>Resize column</b> - in <i>main.css</i> file find class: <i>div.p_table div.caption_column</i>, there is a width attribute. Change that value to resize column width. Proceed similarly for other columns below: <i>div.p_table div.column_1, div.p_table div.column_2...</i> Next step is to resize width of <i>div.p_table</i> class by the same value.</li>
+							<li><b>Change column hover style</b> - Look for <i>COLUMN HOVERS</i> labels within .css files.</li>
+							<li><b>Change data rows background colors</b> - change background-color attributes of <i>div.p_table li.row_style_1, div.p_table li.row_style_2, div.p_table li.row_style_3</i> classes within main.css file.</li>
+							<li><b>Remove or add a new data row</b> - inside html document, remove or add a block of code:
+<pre class="code">
+&lt;li class="row_style_1"&gt;&lt;span&gt;Website Statistics&lt;/span&gt;&lt;/li&gt;
+</pre>
+							You can choose from <i>row_style_1</i> to <i>row_style_3</i> value,
+							</li>
+							<li><b>Remove or add a new column</b> - inside html document, remove or add a block of code:
+<pre class="code">
+&lt;!-- column style 4 --&gt;
+&lt;div class="column_4"&gt;
+...
+&lt;/div&gt;
+</pre></li>
+<li><b>Add ribbon to column header</b> - inside html document, there is a block of code (below each of column div):
+<pre class="code">
+&lt;!-- ribbon (optional) --&gt;
+&lt;!--&lt;div class="column_ribbon ribbon_style1_new"&gt;&lt;/div&gt;--&gt;
+&lt;!-- /ribbon --&gt;
+</pre>
+Remove html comments from the second line of this code leaving:
+<pre class="code">
+&lt;!-- ribbon (optional) --&gt;
+&lt;div class="column_ribbon ribbon_style1_new"&gt;&lt;/div&gt;
+&lt;!-- /ribbon --&gt;
+</pre>
+<i>ribbon_style1_new</i> identifies a specific ribbon. In <i>main.css</i> file under <i>/* ------ ribbon styles ------  */</i> comment you can find a list of these identifiers (class names that describe them). Use one of them eg.:
+<pre class="code">
+&lt;!-- ribbon (optional) --&gt;
+&lt;div class="column_ribbon ribbon_style1_off35"&gt;&lt;/div&gt;
+&lt;!-- /ribbon --&gt;
+</pre></li>
+					<li><b>Add tooltip</b> - tooltip is associated with links and appears when you hover your mouse over the link. To add the tooltip just create empty link in the table cell eg.:
+<pre class="code">
+&lt;li class="row_style_3 align_center"&gt;&lt;span&gt;&lt;a href="#" class="tooltip" rel="Put here your tooltip text."&gt;1&lt;/a&gt;&lt;/span&gt;&lt;/li&gt; <!-- tooltip example -->
+</pre>
+					</li>	
+
+					<li><b>Set one or many columns as active (popped-up) by default</b> - inside html document, add <i>active_column</i> class right after <i>column_x</i> class, eg.:
+<pre class="code">
+&lt;div class="column_1 active_column"&gt;
+&lt;!-- ribbon (optional) --&gt;
+&lt;!--&lt;div class="column_ribbon ribbon_style1_new"&gt;&lt;/div&gt;--&gt;
+&lt;!-- /ribbon --&gt;
+               
+&lt;ul&gt;
+&lt;!-- column header --&gt;
+&lt;li class="header_row_1 align_center"&gt;&lt;h2&gt;standard&lt;/h2&gt;&lt;/li&gt;
+[...]
+</pre>
+					
+						</ul>
+
+						<div class="contentHeader"><a name="menu4"></a>Used Fonts</div>
+						
+						Included fonts are 100% free for commercial usage.
+						
+						<ul type="square">
+							<li>Yanone Kaffeesatz - <a href="http://www.google.com/webfonts/family?family=Yanone+Kaffeesatz" target="_blank">http://www.google.com/webfonts/family?family=Yanone+Kaffeesatz</a>.</li>
+						</ul>
+										
+						<div class="contentHeader"><a name="menu5"></a>Support</div>
+
+						<p>Support for all our items is conducted through our <a target="_blank" href="http://support.quanticalabs.com">Support Forum</a>. Please register an account and search the forum or create a new topic, we’ll answer as soon as possible. If you need a custom modification, please feel free to contact us.</p>
+						<p>Thank You for purchasing and for your support for our work!</p>
+
+						<p>QuanticaLabs 2013<br/>
+						<a href="mailto:QuanticaLabs@gmail.com">quanticalabs@gmail.com</a><br/>
+						<a href="http://www.quanticalabs.com" target="_blank">www.quanticalabs.com</a></p>
+						
+					</div>
+					
+					<div class="menu">
+				
+						<a href="#menu1" class="menu">CSS Styles</a>
+						<a href="#menu2" class="menu">HTML Structure</a>
+						<a href="#menu3" class="menu">How To...</a>
+						<a href="#menu4" class="menu">Used Fonts</a>
+						<a href="#menu5" class="menu">Support</a>
+						
+					</div>
+				
+				</div>
+			
+				<div class="footer"></div>
+		
+			</div>
+
+		</body>
+		
+	</html>

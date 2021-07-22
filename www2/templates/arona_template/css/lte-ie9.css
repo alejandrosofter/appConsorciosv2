@@ -1,0 +1,42 @@
+.met_recent_work_overlay,
+.met_parallax:after,
+.met_carousel_nav a{
+	background: url('../img/00005.png') repeat;
+}
+
+.ls-fullwidth .ls-nav-prev{
+	left: 10px!important;
+	top: 40%!important;
+}
+
+.ls-fullwidth .ls-nav-next{
+	right: 10px!important;
+	top: 40%!important;
+	left: auto!important;
+}
+
+.knob span{
+	display: inline-block;
+	position: relative;
+}
+
+.knob > div > div{
+	background: none;
+}
+
+.knob i{
+	color: #656C6E;
+	position: relative;
+}
+
+.met_fixed_header.met_header_1{
+	background-color: #FFFFFF;
+}
+
+.met_header_2 .met_header_tag_wrap{
+	background-color: #4B4D4D;
+}
+
+.met_header_line{
+	background-color: #383A3A;
+}

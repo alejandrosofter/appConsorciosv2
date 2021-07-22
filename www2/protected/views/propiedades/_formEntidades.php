@@ -1,0 +1,1 @@
+<?= $this->renderPartial('/propiedadesEntidades/_form2',array('form'=>$form));?>

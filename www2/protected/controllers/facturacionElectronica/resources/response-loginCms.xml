@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><loginCmsResponse xmlns="http://wsaa.view.sua.dvadac.desein.afip.gov"><loginCmsReturn>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;loginTicketResponse version=&quot;1&quot;&gt;
+    &lt;header&gt;
+        &lt;source&gt;CN=wsaa, O=AFIP, C=AR, SERIALNUMBER=CUIT 33693450239&lt;/source&gt;
+        &lt;destination&gt;C=ar, O=puntoventa_electronico, SERIALNUMBER=CUIT 20308585736, CN=empresa ale&lt;/destination&gt;
+        &lt;uniqueId&gt;670337703&lt;/uniqueId&gt;
+        &lt;generationTime&gt;2015-09-18T12:19:16.494-03:00&lt;/generationTime&gt;
+        &lt;expirationTime&gt;2015-09-19T00:19:16.494-03:00&lt;/expirationTime&gt;
+    &lt;/header&gt;
+    &lt;credentials&gt;
+        &lt;token&gt;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgdW5pcXVlX2lkPSI3NDUyMjY3MjEiIHNyYz0iQ049d3NhYSwgTz1BRklQLCBDPUFSLCBTRVJJQUxOVU1CRVI9Q1VJVCAzMzY5MzQ1MDIzOSIgZ2VuX3RpbWU9IjE0NDI1ODk0OTYiIGV4cF90aW1lPSIxNDQyNjMyNzU2IiBkc3Q9IkNOPXdzZmUsIE89QUZJUCwgQz1BUiIvPgogICAgPG9wZXJhdGlvbiB2YWx1ZT0iZ3JhbnRlZCIgdHlwZT0ibG9naW4iPgogICAgICAgIDxsb2dpbiB1aWQ9IkM9YXIsIE89cHVudG92ZW50YV9lbGVjdHJvbmljbywgU0VSSUFMTlVNQkVSPUNVSVQgMjAzMDg1ODU3MzYsIENOPWVtcHJlc2EgYWxlIiBzZXJ2aWNlPSJ3c2ZlIiByZWdtZXRob2Q9IjIyIiBlbnRpdHk9IjMzNjkzNDUwMjM5IiBhdXRobWV0aG9kPSJjbXMiPgogICAgICAgICAgICA8cmVsYXRpb25zPgogICAgICAgICAgICAgICAgPHJlbGF0aW9uIHJlbHR5cGU9IjQiIGtleT0iMjAzMDg1ODU3MzYiLz4KICAgICAgICAgICAgPC9yZWxhdGlvbnM+CiAgICAgICAgPC9sb2dpbj4KICAgIDwvb3BlcmF0aW9uPgo8L3Nzbz4KCg==&lt;/token&gt;
+        &lt;sign&gt;h91JRWjGTP0d6dAQfptckdVansc6LAly922af1mouZPV1wb87w1oNnrLe0XyivMHDgcw8wAzU1j+3Nl+oM02FqNEjcrLQNGbN4PidtE04dCvokJRZY8foyWMrCq6hYzr2oidUk8USeYfWKUbbt8AABm/Z48zRNCfq/2Y79UIEJE=&lt;/sign&gt;
+    &lt;/credentials&gt;
+&lt;/loginTicketResponse&gt;
+
+</loginCmsReturn></loginCmsResponse></soapenv:Body></soapenv:Envelope>

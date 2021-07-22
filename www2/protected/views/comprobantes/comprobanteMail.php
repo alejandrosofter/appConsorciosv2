@@ -1,0 +1,1 @@
+Hola! te enviamos tu comprobante en el archivo adjunto.

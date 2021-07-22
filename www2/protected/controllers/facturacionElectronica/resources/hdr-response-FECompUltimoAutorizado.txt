@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Date: Fri, 18 Sep 2015 15:19:17 GMT
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: private, max-age=0
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 470
+Set-Cookie: TScdce95=cf67e5ca04c8a32912e29198c8a46bb50231f18d617a8e4f55fc2b75; Path=/

@@ -1,0 +1,53 @@
+version: "3"
+ 
+services:
+  host:
+    build: imagenServer/
+    ports:
+      - 80:80
+    volumes:
+      - ./www2:/var/www/html
+    links:
+      - mysql:db
+    tty: true
+    
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=consorcios
+      - MYSQL_ROOT_PASSWORD=vertrigo
+      - MYSQL_USER=alejandro
+      - MYSQL_PASSWORD=vertrigo
+    volumes:
+      # Montamos un volumen para MySQL para no perder los datos de bd
+      - ./mysqlData:/var/lib/mysql
+      - ./initDb:/docker-entrypoint-initdb.d
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+    command: mysqld --sql_mode="" --character-set-server=utf8 --collation-server=utf8_slovenian_ci --init-connect='SET NAMES UTF8;' --innodb-flush-log-at-trx-commit=0
+    restart: on-failure
+  phpmyadmin:
+      depends_on:
+       - mysql
+      image: phpmyadmin/phpmyadmin
+      restart: always
+      ports:
+       - '8080:80'
+      environment:
+        PMA_HOST: mysql
+      
+
+  # miservicio_php:
+  #   image: php:5-apache
+  #   volumes:
+  #     # Montamos nuestra web desde fuera en el directorio web del contenedor
+  #     - ./www/:/var/www/html
+    
+  #   expose:
+  #     - 80
+  #   ports:
+  #     - 80:80
+  #   links: 
+  #     - miservicio_mysql

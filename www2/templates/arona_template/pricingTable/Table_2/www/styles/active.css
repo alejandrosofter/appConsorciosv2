@@ -1,0 +1,92 @@
+div.p_table div.active_column li.header_row_2
+	{
+	/* removed border radiuses */
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	}
+	
+div.p_table div.active_column li.footer_row
+	{
+	/* added border radiuses */
+	border-radius: 0px 0px 5px 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	}
+
+div.p_table div.active_column li.row_style_1,
+div.p_table div.active_column li.row_style_2,
+div.p_table div.active_column li.row_style_3
+	{
+	color: #ffffff;
+	}
+
+div.p_table div.active_column a.button_1,
+div.p_table div.active_column a.button_2,
+div.p_table div.active_column a.button_3,
+div.p_table div.active_column a.button_4
+	{
+	background: 0;
+	filter: 0; /* IE5.5 - 7 */
+	-ms-filter: 0; /* IE8 */
+	border: 0;
+	color: #ffffff;
+	position: relative;
+	top: -5px;
+	/* shadow */
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	}
+
+div.p_table div.active_column li.header_row_2
+	{
+	/* removed border radiuses */
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	}
+
+div.p_table div.active_column li.footer_row
+	{
+	/* added border radiuses */
+	border-radius: 0px 0px 5px 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	}
+
+div.p_table div.active_column li.row_style_1,
+div.p_table div.active_column li.row_style_2,
+div.p_table div.active_column li.row_style_3
+	{
+	color: #ffffff;
+	}
+
+div.p_table div.active_column a.button_1,
+div.p_table div.active_column a.button_2,
+div.p_table div.active_column a.button_3,
+div.p_table div.active_column a.button_4
+	{
+	background: 0;
+	filter: 0; /* IE5.5 - 7 */
+	-ms-filter: 0; /* IE8 */
+	border: 0;
+	color: #ffffff;
+	position: relative;
+	top: -5px;
+	/* shadow */
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+	}
+	
+div.p_table div.active_column li.row_style_1 a,
+div.p_table div.active_column li.row_style_2 a,
+div.p_table div.active_column li.row_style_3 a
+	{
+	color: #ffffff !important;
+	}

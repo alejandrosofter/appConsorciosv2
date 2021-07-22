@@ -1,0 +1,1 @@
+/usr/local/bin/wkhtmltopdf --encoding utf-8 _comp1626888657.html files/_comp1626888657.pdf

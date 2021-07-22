@@ -1,0 +1,3 @@
+ALTER TABLE  `propiedades` ADD  `importeFavor` FLOAT NOT NULL ;
+ALTER TABLE  `pagos` ADD  `idPropiedad` INT( 10 ) NOT NULL ;
+ALTER TABLE  `comprobantes` ADD  `idPropiedad` INT( 5 ) NOT NULL ;
